@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Data Journalism</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+        <h1>D3 Times</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-lg-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-lg-9">
+        <div class="article">
+          <h2>2014 U.S. State Data Shows Correlations Between Health Markers and Poverty Levels</h2>
+
+          <p>To visualize different data segments, please select from the various headings of Poverty, Age, Household Income, 
+             Obesity, Smokers, and Without Healthcare. Each selection shifts the State data represented in circles on  
+             the graph. The circles themselves can be hovered over to view the specific values for that state.  </p>
+
+          <p>Findings: Through this visualization we are able to piece apart the positive correlation between poverty and healthcare. 
+             Not only do we see the general upward trend, but when you place a cursor over a state like Texas (TX), 
+             we see a high percentage of the population has no healthcare, 24.9%, and that 17.4% of the population lives in poverty. 
+             In contrast, we see states such as Massachusetts (MA), that have a lower percentage of their population without healthcare, 4.6%,
+             also have a lower poverty rate, 11.6%. </p>
+            
+          <p> When displaying data on healthcare and household income we can observe a negative correlation between median household income and the no healthcare rate.
+              States with higher median imcomes have a lower percentage of their population without healthcare, while the opposite is true for those states with lower median income rates.
+              From our previous example, the state of Massachusetts (MA), which has a median household income of $69,160, has a low no healthcare rate of 4.6%. Mississippi (MS), on the other hand,
+              has a median household income of $39680, and 18.8% of their population has no healthcare insurance.</p>
+
+          <p> As you toggle the axes, you will also uncover trends in how Household Income and Obesity rates impact eachother, how Smoking rates vary with age and household income, and more. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>Michelle Fitzpatrick</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
